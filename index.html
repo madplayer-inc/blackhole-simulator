@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Black Hole Simulator · 블랙홀 시뮬레이터</title>
+    <meta name="description" content="A real-time simulator of a spinning black hole: flowing spacetime, tidal disruption, accretion disks and the photon shell" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Black Hole Simulator · 블랙홀 시뮬레이터" />
+    <meta property="og:description" content="Flowing spacetime, tidal disruption, accretion disks and the photon shell of a Kerr black hole — in your browser." />
+    <meta property="og:image" content="https://madplayer-inc.github.io/blackhole-simulator/og.jpg" />
+    <meta property="og:url" content="https://madplayer-inc.github.io/blackhole-simulator/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="viewport"></div>
+    <div id="hud">
+      <div id="hud-time"></div>
+      <div id="planet-cards"></div>
+      <div id="hud-events" aria-live="polite"></div>
+    </div>
+    <aside id="panel" aria-hidden="true">
+      <header id="panel-head">
+        <span data-i18n="app.title"></span>
+        <button id="panel-close" type="button"></button>
+      </header>
+      <div id="pane-host"></div>
+    </aside>
+    <div id="help" data-i18n="app.help"></div>
+    <div id="fatal" hidden></div>
+    <div id="loading"><div class="spinner"></div></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
